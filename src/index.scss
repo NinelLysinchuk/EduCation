@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.blue {
+  color: #525FE1;
+  font-weight: bold;
+}
+
+em {
+  padding-left: 15px;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+   background-color: #f8f9fa;
+
+   .logo {
+     font-size: 20pt;
+     font-weight: bold;
+
+     &-left {
+       color: #525FE1;
+     }
+
+     &-right {
+       color: #1C1C1C;
+     }
+   }
+
+   .menu-item {
+     margin: 0 10px;
+     padding: 0 20px;
+     text-decoration: none;
+     color: #808080;
+
+     &-selected {
+       color: #1C1C1C;
+     }
+   }
+
+   .auth-block {
+     display: flex;
+     align-items: center;
+
+     .signin {
+       margin-right: 10px;
+       text-decoration: none;
+       color: #000;
+       font-size: 12pt;
+       font-weight: bold;
+       padding: 0 20px;
+     }
+
+     .signup-button {
+       padding: 12px 24px;
+       background: linear-gradient(#525FE1, #2E3899);
+       color: #fff;
+       text-decoration: none;
+       border-radius: 10px;
+       font-size: 15pt;
+     }
+   }
+}
+
+.main {
+  display: flex;
+  padding: 25px 50px;
+
+  .mainLeft {
+    width: 60%;
+    padding: 20px;
+
+    .mainInfo-title {
+      font-size: 39pt;
+    }
+
+    .blue {
+      color: #525FE1;
+      font-weight: bold;
+    }
+
+    .mainInfo-description {
+      color: #808080;
+    }
+
+    .main-button-join {
+      color: #000;
+      font-weight: bold;
+      background: #FFCF59;
+      border-radius: 10px;
+      border: none;
+      padding: 10px 20px;
+      margin-right: 10px;
+    }
+  }
+
+  .main-buttons {
+    display: flex;
+  }
+
+  .MainImg-man {
+    position: absolute;
+    right: 160px;
+    height: 600px;
+  }
+}
+
+.statistic-placeholder {
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(#525FE1, #2E3899);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f8f9fa;
+  position: relative;
+
+  .statistic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+
+    .statistic-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .statistic-numbers {
+      font-size: 23pt;
+      font-weight: bold;
+    }
+
+    .statistic-description {
+      padding: 10px;
+    }
+  }
+}
+
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+  .advantages-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 30pt;
+
+  }
+
+  .advantages-title,
+  .about-company-title {
+    font-weight: bold;
+    
+  }
+
+  .advantages-title-blue,
+  .about-company-title-blue {
+    color: #525fe1;
+  }
+
+  .advantages-description {
+    font-size: 14pt;
+    color: #333333;
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .advantages-card-title {
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .advantages-card-description,
+  .about-company-description {
+    text-align: center;
+    color: #4d4d4d;
+  }
+
+  .advantages-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+
+    .advantages-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 10px;
+      box-shadow: 4px 8px 5px 4px rgba(35, 31, 31, 0.1);
+      padding: 20px;
+      background-color: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 6px 10px 10px rgba(35, 31, 31, 0.15);
+      }
+
+      .advantages-img {
+        height: 70px;
+        margin-bottom: 10px;
+      }
+
+      .advantages-card-title {
+        font-size: 15pt;
+        font-weight: bold;
+        color: #333333;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .advantages-card-description {
+        font-size: 12pt;
+        color: #4d4d4d;
+        text-align: center;
+        max-width: 80%;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+
+.about-company {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .about-company-title {
+    font-size: 30pt;
+  }
+
+  .about-company-description {
+    width: 60%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .about-company-video {
+    width: 1000px;
+    z-index: 1;
+  }
+}
+
+  .about-steps-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFCF59;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 10px;
+
+    .about-steps-left {
+      width: 40%;
+      .about-steps-background {
+        width: 350px;
+        height: 500px;
+        position: relative;
+        bottom: 150px;
+      }
+    }
+
+      .about-steps-img {
+        width: 407px;
+        position: absolute;
+        left: 100px;
+        margin-top: 30px;
+      }
+    
+
+    .about-steps {
+      width: 60%;
+      padding: 30px;
+
+      .about-steps-title {
+        font-size: 30pt;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .about-steps-description {
+        font-size: 13pt;
+        color: rgb(77, 74, 74);
+        text-align: center;
+      }
+
+      
+
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .step {
+      background-color: #fff;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 10px;
+      width: 60%;
+
+      .step-number {
+        font-size: 23pt;
+        font-weight: bold;
+        padding: 10px;
+        border-right: 1px solid rgba(0, 0, 0, 0.096);
+        text-align: center;
+      }
+
+      .step-text {
+        margin-left: 10px;
+        font-size: 17pt;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.ourPrograms-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  .ourPrograms-header {
+    padding-top: 30px;
+  }
+
+  .programs-title {
+    font-size: 30pt;
+  }
+
+  .programs-descripton {
+    font-size: 13pt;
+    color: rgb(77, 74, 74);
+    text-align: center;
+    padding: 20px;
+    text-wrap: balance;
+  }
+
+  .programs {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+    .program {
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.171);
+      margin: 40px;
+      width: 20%;
+      box-shadow: 4px 4px 5px 4px rgb(35 31 31 / 10%);
+
+      .program-img {
+        width: 100%;
+      }
+
+      .program-title {
+        font-size: 16pt;
+        font-weight: bold;
+        padding: 10px 0;
+      }
+
+      .program-descripton {
+        font-size: 14px;
+        color: rgb(77, 74, 74);
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      .program-more {
+        font-size: 11pt;
+        font-weight: bold;
+        text-align: center;
+        background-color: #FFCF59;
+        border: none;
+        border-radius: 10px;
+        padding: 12px 30px;
+        position: relative;
+        top: 20px;
+        box-sizing: border-box;
+        z-index: 1;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.reviews{
+  text-align: center;
+ }
+
+ .reviews-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+ }
+
+ .reviews-title{
+  font-size: 30pt;
+  margin-top: 20px;
+ }
+
+ .reviews-description{
+  font-size: 13pt;
+  color: rgb(77, 74, 74);
+  text-align: center;
+  padding: 10px 0;
+ }
+
+ .review-quotes{
+  position: relative;
+  right: 400px;
+  top: 25px;
+  width: 40px;
+ }
+
+ .review{
+  background: linear-gradient(#525FE1, #2E3899);
+  color:#fff;
+  font-size: 13pt;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 35px;
+  border-radius: 10px;
+  z-index: 1;
+ }
+
+ .review-person{
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+ }
+
+ .person-photo{
+  width: 80px;
+ }
+
+ .person-name{
+  font-size: 18pt;
+  font-weight: bold;
+ }
+
+ .review-circle-l{
+  position: relative;
+  width: 50px;
+  right: 385px;
+  top: 180px;
+  box-sizing: border-box;
+  z-index: -1;
+ }
+
+ .review-circle-r{
+  position: relative;
+  width: 50px;
+  left: 355px;
+  top: 30px;
+  box-sizing: border-box;
+  z-index: -1;
+ }
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  background-color: #111538;
+  color: #f8f9fa;
+
+  .footer-column {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+
+    .footer-title {
+      margin-bottom: 10px;
+      margin-top: 5px;
+      font-size: 31pt;
+    }
+
+    .footer-description {
+      font-size: 14px;
+    }
+  }
+
+  .footerMenu {
+    display: flex;
+    flex: 0 0 60%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    .column {
+      margin-right: 20px;
+      flex: 1;
+
+      h3 {
+        font-size: 18pt;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 5px;
+
+          a {
+            text-decoration: none;
+            font-size: 12pt;
+            color: #f8f9fa;
+
+            &:hover {
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  transform: translateY(-100%);
+
+  &::after {
+    font-size: 20px;
+    color: #111538;
+  }
+}
