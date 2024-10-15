@@ -374,8 +374,8 @@ em {
     .program {
       border-radius: 10px;
       border: 1px solid rgba(0, 0, 0, 0.171);
-      margin: 40px;
-      width: 20%;
+      margin: 15px;
+      width: 25%;
       box-shadow: 4px 4px 5px 4px rgb(35 31 31 / 10%);
 
       .program-img {
@@ -388,11 +388,11 @@ em {
         padding: 10px 0;
       }
 
-      .program-descripton {
+      .program-description {
         font-size: 14px;
         color: rgb(77, 74, 74);
         text-align: center;
-        padding: 10px 0;
+        padding: 0 10px;
       }
 
       .program-more {
